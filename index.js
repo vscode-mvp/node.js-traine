@@ -1,4 +1,5 @@
 import { generatedId } from "./modules.js";
+if (generatedId) {
 const ids = { id: null };
 
 function generateIdObj() {
@@ -10,3 +11,4 @@ function generateIdObj() {
     }
 }
 generateIdObj()
+}
