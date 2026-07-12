@@ -1,14 +1,14 @@
-import { generatedId } from "./modules.js";
-if (generatedId) {
-const ids = { id: null };
+import fs from "fs/promises";
 
-function generateIdObj() {
-    for (let i = 1; i <= 10; i++) {
-        let genId = generatedId()
-        ids.id = genId
-
-        console.log(`id ${i}: ${genId}`)
+async function readFile() {
+    try {
+        const file = await fs.readFile('text.txt', 'utf-8')
+    
+        console.log("___СОДЕРЖИМОЕ ФАЙЛА___")
+        console.log(file)
+    }
+    catch (error) {
+        console.error(`Ошибка чтения файла: ${error.message}`)
     }
 }
-generateIdObj()
-}
+readFile()
