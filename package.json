@@ -1,0 +1,22 @@
+{
+  "name": "node.js-traine",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vscode-mvp/node.js-traine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vscode-mvp/node.js-traine/issues"
+  },
+  "homepage": "https://github.com/vscode-mvp/node.js-traine#readme"
+}
