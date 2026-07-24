@@ -6,7 +6,7 @@ async function createFile(filename) {
     await fs.writeFile(filename, "hello world")
 }
 
-async function readFile(filename) {
+async function readFile(fileName) {
     const data = await fs.readFile(fileName, 'utf8')
     const stat = await fs.stat(fileName)
 
